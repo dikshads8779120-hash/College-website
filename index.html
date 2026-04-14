@@ -19,3 +19,119 @@ body{font-family:Arial,sans-serif;line-height:1.6;background:#f5f5}
 .card{background:#f8f9ff;padding:20px;border-radius:8px;border-left:4px solid #667eea}
 .card h3{color:#333;margin-bottom:10px}
 .btn{background:#667eea;color:white
+btn:hover{background:#764ba2}
+.faculty-img{width:80px;height:80px;border-radius:50%;background:#ddd;margin-bottom:10px}
+.hidden{display:none}
+@media(max-width:768px){.header h1{font-size:1.8rem}}
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <button class="lang-btn active" onclick="setLang('en')">English</button>
+  <button class="lang-btn" onclick="setLang('hi')">हिंदी</button>
+</div>
+
+<div class="header">
+  <h1 data-en="National Degree College, Bangalore" data-hi="नेशनल डिग्री कॉलेज, बैंगलोर">National Degree College, Bangalore</h1>
+  <p data-en="Excellence in Education Since 1995" data-hi="1995 से शिक्षा में उत्कृष्टता">Excellence in Education Since 1995</p>
+</div>
+
+<div class="container">
+
+  <!-- Admission Section -->
+  <div class="section">
+    <h2 data-en="🎓 Admission Open 2026-27" data-hi="🎓 प्रवेश 2026-27 शुरू">🎓 Admission Open 2026-27</h2>
+    <p data-en="Apply now for Degree and 12th Class. Limited seats available!" data-hi="डिग्री और 12वीं कक्षा के लिए अभी आवेदन करें। सीमित सीटें!">Apply now for Degree and 12th Class. Limited seats available!</p>
+    <button class="btn" data-en="Apply Now" data-hi="अभी आवेदन करें">Apply Now</button>
+  </div>
+
+  <!-- 12th Class Section -->
+  <div class="section">
+    <h2 data-en="📚 12th Class - PUC" data-hi="📚 12वीं कक्षा - पीयूसी">📚 12th Class - PUC</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 data-en="Science - PCMB" data-hi="विज्ञान - पीसीएमबी">Science - PCMB</h3>
+        <p data-en="Physics, Chemistry, Maths, Biology" data-hi="भौतिकी, रसायन, गणित, जीवविज्ञान">Physics, Chemistry, Maths, Biology</p>
+      </div>
+      <div class="card">
+        <h3 data-en="Commerce - CEBA" data-hi="वाणिज्य - सीईबीए">Commerce - CEBA</h3>
+        <p data-en="Commerce, Economics, Business, Accountancy" data-hi="वाणिज्य, अर्थशास्त्र, व्यवसाय, लेखाशास्त्र">Commerce, Economics, Business, Accountancy</p>
+      </div>
+      <div class="card">
+        <h3 data-en="Arts - HEPS" data-hi="कला - एचईपीएस">Arts - HEPS</h3>
+        <p data-en="History, Economics, Political Science, Sociology" data-hi="इतिहास, अर्थशास्त्र, राजनीति विज्ञान, समाजशास्त्र">History, Economics, Political Science, Sociology</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Degree Section -->
+  <div class="section">
+    <h2 data-en="🎓 Degree Courses" data-hi="🎓 डिग्री कोर्स">🎓 Degree Courses</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 data-en="BCA" data-hi="बीसीए">BCA</h3>
+        <p data-en="Bachelor of Computer Applications - 3 Years" data-hi="बैचलर ऑफ कंप्यूटर एप्लीकेशन - 3 वर्ष">Bachelor of Computer Applications - 3 Years</p>
+      </div>
+      <div class="card">
+        <h3 data-en="BBA" data-hi="बीबीए">BBA</h3>
+        <p data-en="Bachelor of Business Administration - 3 Years" data-hi="बैचलर ऑफ बिजनेस एडमिनिस्ट्रेशन - 3 वर्ष">Bachelor of Business Administration - 3 Years</p>
+      </div>
+      <div class="card">
+        <h3 data-en="BCom" data-hi="बीकॉम">BCom</h3>
+        <p data-en="Bachelor of Commerce - 3 Years" data-hi="बैचलर ऑफ कॉमर्स - 3 वर्ष">Bachelor of Commerce - 3 Years</p>
+      </div>
+      <div class="card">
+        <h3 data-en="BSc" data-hi="बीएससी">BSc</h3>
+        <p data-en="Bachelor of Science - 3 Years" data-hi="बैचलर ऑफ साइंस - 3 वर्ष">Bachelor of Science - 3 Years</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Principal Section -->
+  <div class="section">
+    <h2 data-en="👨‍🏫 Principal's Message" data-hi="👨‍🏫 प्रिंसिपल का संदेश">👨‍🏫 Principal's Message</h2>
+    <div class="card">
+      <div class="faculty-img"></div>
+      <h3 data-en="Dr. Ramesh Kumar" data-hi="डॉ. रमेश कुमार">Dr. Ramesh Kumar</h3>
+      <p data-en="M.A, Ph.D | 25+ Years Experience" data-hi="एम.ए, पीएच.डी | 25+ वर्ष का अनुभव">M.A, Ph.D | 25+ Years Experience</p>
+      <p data-en="Welcome to our college. We focus on quality education and overall development of students." data-hi="हमारे कॉलेज में आपका स्वागत है। हम गुणवत्तापूर्ण शिक्षा और छात्रों के सर्वांगीण विकास पर ध्यान देते हैं।">Welcome to our college. We focus on quality education and overall development of students.</p>
+    </div>
+  </div>
+
+  <!-- Faculty Section -->
+  <div class="section">
+    <h2 data-en="👥 Our Faculty" data-hi="👥 हमारे शिक्षक">👥 Our Faculty</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="faculty-img"></div>
+        <h3 data-en="Prof. Sunita Sharma" data-hi="प्रो. सुनीता शर्मा">Prof. Sunita Sharma</h3>
+        <p data-en="HOD - Computer Science | M.Tech" data-hi="विभागाध्यक्ष - कंप्यूटर साइंस | एम.टेक">HOD - Computer Science | M.Tech</p>
+      </div>
+      <div class="card">
+        <div class="faculty-img"></div>
+        <h3 data-en="Prof. Anil Verma" data-hi="प्रो. अनिल वर्मा">Prof. Anil Verma</h3>
+        <p data-en="HOD - Commerce | M.Com, Ph.D" data-hi="विभागाध्यक्ष - वाणिज्य | एम.कॉम, पीएच.डी">HOD - Commerce | M.Com, Ph.D</p>
+      </div>
+      <div class="card">
+        <div class="faculty-img"></div>
+        <h3 data-en="Prof. Kavita Reddy" data-hi="प्रो. कविता रेड्डी">Prof. Kavita Reddy</h3>
+        <p data-en="HOD - Science | M.Sc, B.Ed" data-hi="विभागाध्यक्ष - विज्ञान | एम.एससी, बी.एड">HOD - Science | M.Sc, B.Ed</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.textContent = el.getAttribute('data-' + lang);
+  });
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
+
